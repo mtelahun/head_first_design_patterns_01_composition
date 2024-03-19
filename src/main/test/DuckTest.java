@@ -87,4 +87,18 @@ public class DuckTest {
         // Assert
         assertEquals("Quack", behavior);
     }
+
+    @Test
+    public void givenModelDuckandSetQuakBehaviorMuteWhenPerformQuackBehaviorReturnSilent() {
+        // Arrange
+        ModelDuck duck = new ModelDuck();
+        Quack qb = new MuteQuack();
+        duck.setQuackBehavior(qb);
+
+        // Act
+        String behavior = duck.performQuack();
+
+        // Assert
+        assertEquals("<< Silence >>", behavior);
+    }
 }
