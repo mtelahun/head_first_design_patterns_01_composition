@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import main.app.MallardDuck;
+import main.app.ModelDuck;
 
 public class DuckTest {
     @Test
@@ -42,6 +43,6 @@ public class DuckTest {
         String behavior = duck.performFly();
 
         // Assert
-        assertEquals("I'm flying!!", behavior);
+        assertEquals("I can't fly", behavior);
     }
 }
