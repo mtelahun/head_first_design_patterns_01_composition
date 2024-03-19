@@ -1,5 +1,5 @@
 package main.app;
 
-public interface QuakBehavior {
+public interface QuackBehavior {
     public String quack();
 }

@@ -1,5 +1,5 @@
 package main.app;
-public class Quack implements QuakBehavior {
+public class Quack implements QuackBehavior {
 
     @Override
     public String quack() {

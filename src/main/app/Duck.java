@@ -1,7 +1,7 @@
 package main.app;
 public abstract class Duck {
     FlyBehavior flyBehavior;
-    QuakBehavior quackBehavior;
+    QuackBehavior quackBehavior;
 
     public Duck() {
     }
@@ -12,7 +12,7 @@ public abstract class Duck {
         flyBehavior = fb;
     }
 
-    public void setQuackBehavior(QuakBehavior qb) {
+    public void setQuackBehavior(QuackBehavior qb) {
         quackBehavior = qb;
     }
 
