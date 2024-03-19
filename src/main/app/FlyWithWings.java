@@ -1,7 +1,8 @@
-public class FlyNoWay implements FlyBehavior {
+package main.app;
+public class FlyWithWings implements FlyBehavior {
 
     @Override
-    public void fly() {
+    public String fly() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'fly'");
     }

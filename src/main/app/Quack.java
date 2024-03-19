@@ -1,3 +1,4 @@
+package main.app;
 public class Quack implements QuakBehavior {
 
     @Override

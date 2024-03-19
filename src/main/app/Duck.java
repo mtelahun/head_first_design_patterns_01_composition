@@ -1,3 +1,4 @@
+package main.app;
 public abstract class Duck {
     FlyBehavior flyBehavior;
     QuakBehavior quackBehavior;
@@ -7,8 +8,8 @@ public abstract class Duck {
 
     public abstract void display();
 
-    public void performFly() {
-        flyBehavior.fly();
+    public String performFly() {
+        return flyBehavior.fly();
     }
 
     public void performQuack() {

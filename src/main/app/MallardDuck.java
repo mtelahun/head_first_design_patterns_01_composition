@@ -1,3 +1,4 @@
+package main.app;
 public class MallardDuck extends Duck {
 
     public MallardDuck() {

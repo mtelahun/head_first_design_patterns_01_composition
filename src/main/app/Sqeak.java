@@ -1,3 +1,4 @@
+package main.app;
 public class Sqeak implements QuakBehavior {
 
     @Override
