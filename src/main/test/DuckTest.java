@@ -45,4 +45,18 @@ public class DuckTest {
         // Assert
         assertEquals("I can't fly", behavior);
     }
+
+    @Test
+    public void givenModelDuckAndSetFlyBehaviorRocketPoweredWhenPerformFlyBehaviorReturnImFlyingWithRocket() {
+        // Arrange
+        ModelDuck duck = new ModelDuck();
+        FlyWithRocket fb = new FlyWithRocket();
+        duck.setFlyBehavior(fb);
+
+        // Act
+        String behavior = duck.performFly();
+
+        // Assert
+        assertEquals("I'm flying with a rocket!", behavior);
+    }
 }
