@@ -16,8 +16,8 @@ public class DuckTest {
 
         // Assert
         assertEquals(
-            behavior, 
-            "I'm flying!!", 
-            "Mallard duck returns string: 'I'm flying!!'");
+            "I'm flying!!",
+            behavior
+        );
     }
 }
