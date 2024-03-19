@@ -12,6 +12,10 @@ public abstract class Duck {
         flyBehavior = fb;
     }
 
+    public void setQuackBehavior(QuakBehavior qb) {
+        quackBehavior = qb;
+    }
+
     public String performFly() {
         return flyBehavior.fly();
     }

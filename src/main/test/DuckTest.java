@@ -82,7 +82,7 @@ public class DuckTest {
         duck.setQuackBehavior(qb);
 
         // Act
-        String behavior = duck.performFly();
+        String behavior = duck.performQuack();
 
         // Assert
         assertEquals("Quack", behavior);
