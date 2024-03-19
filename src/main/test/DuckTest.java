@@ -3,6 +3,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import main.app.FlyWithRocket;
 import main.app.MallardDuck;
 import main.app.ModelDuck;
 

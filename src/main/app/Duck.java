@@ -8,6 +8,10 @@ public abstract class Duck {
 
     public abstract void display();
 
+    public void setFlyBehavior(FlyBehavior fb) {
+        flyBehavior = fb;
+    }
+
     public String performFly() {
         return flyBehavior.fly();
     }
