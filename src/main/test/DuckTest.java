@@ -6,6 +6,7 @@ import org.junit.Test;
 import main.app.FlyWithRocket;
 import main.app.MallardDuck;
 import main.app.ModelDuck;
+import main.app.MuteQuack;
 import main.app.Quack;
 
 public class DuckTest {
@@ -92,7 +93,7 @@ public class DuckTest {
     public void givenModelDuckandSetQuakBehaviorMuteWhenPerformQuackBehaviorReturnSilent() {
         // Arrange
         ModelDuck duck = new ModelDuck();
-        Quack qb = new MuteQuack();
+        MuteQuack qb = new MuteQuack();
         duck.setQuackBehavior(qb);
 
         // Act
