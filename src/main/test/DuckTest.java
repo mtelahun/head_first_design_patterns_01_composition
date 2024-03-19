@@ -32,4 +32,16 @@ public class DuckTest {
         // Assert
         assertEquals("Quack", behavior);
     }
+
+    @Test
+    public void givenModelDuckWhenPerformFlyBehaviorThenReturnNoWay() {
+        // Arrange
+        ModelDuck duck = new ModelDuck();
+
+        // Act
+        String behavior = duck.performFly();
+
+        // Assert
+        assertEquals("I'm flying!!", behavior);
+    }
 }
