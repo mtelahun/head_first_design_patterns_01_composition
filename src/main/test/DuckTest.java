@@ -6,6 +6,7 @@ import org.junit.Test;
 import main.app.FlyWithRocket;
 import main.app.MallardDuck;
 import main.app.ModelDuck;
+import main.app.Quack;
 
 public class DuckTest {
     @Test
@@ -71,5 +72,19 @@ public class DuckTest {
 
         // Assert
         assertEquals("Squeak", behavior);
+    }
+
+    @Test
+    public void givenModelDuckandSetQuakBehaviorQuackWhenPerformQuackBehaviorReturnQuack() {
+        // Arrange
+        ModelDuck duck = new ModelDuck();
+        Quack qb = new Quack();
+        duck.setQuackBehavior(qb);
+
+        // Act
+        String behavior = duck.performFly();
+
+        // Assert
+        assertEquals("Quack", behavior);
     }
 }
