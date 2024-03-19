@@ -2,9 +2,9 @@ package main.app;
 public class Quack implements QuakBehavior {
 
     @Override
-    public void quack() {
+    public String quack() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'quack'");
+        return "Quack";
     }
     
 }
