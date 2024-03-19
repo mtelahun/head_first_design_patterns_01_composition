@@ -20,4 +20,16 @@ public class DuckTest {
             behavior
         );
     }
+
+    @Test
+    public void givenMallardDuckWhenInvokeQuakBehaviorThenReturnQuack() {
+        // Arrange
+        MallardDuck duck = new MallardDuck();
+
+        // Act
+        String behavior = duck.performQuack();
+
+        // Assert
+        assertEquals("Quack", behavior);
+    }
 }
